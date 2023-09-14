@@ -1,0 +1,22 @@
+<div class="container mx-auto px-8 py-2">
+<table class="table-fixed bg-gray-200 p-4 rounded-lg">
+    <thead>
+        <tr>
+            <th class="p-4">Name</th>
+            <th class="p-4">Email</th>
+            <th class="p-4">Content</th>
+            <th class="p-4"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="bg-white rounded-lg shadow-lg">
+            <td class="p-4 text-lg font-semibold">{{ name }}</td>
+            <td class="p-4">{{ email }}</td>
+            <td class="p-4">{{ content }}</td>
+            <td class="p-4">
+                <button class="bg-red-500 text-white p-2 rounded" (click)="removeTable()">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

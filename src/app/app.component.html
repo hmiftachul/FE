@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+<app-form (tableAdded)="addtable($event)"></app-form>
+<div class="">
+  <div>
+    <app-table *ngFor="let table of tables; let i = index;" [name]="table.name" [email]="table.email"
+      [content]="table.content" (tableRemoved)="removeTable(i)"></app-table>
+  </div>
+</div>
